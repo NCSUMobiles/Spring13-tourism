@@ -7,7 +7,7 @@ import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-import com.example.androidtablayout.R;
+import com.vimd.peoplefirsttourism.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -45,7 +45,7 @@ public class Login extends Activity {
 		    }
 		if(sb.toString().equalsIgnoreCase("user")) {
 			Intent intent  = new Intent(this,Home.class);
-			startActivity(intent);
+			startActivityForResult(intent, RESULT_OK);
 			finish();
 		}
 			
@@ -90,7 +90,7 @@ public class Login extends Activity {
             
 		Intent intent  = new Intent(this,Home.class);
 		startActivity(intent);
-		finish();
+		//finish();
 		
 		
 	}

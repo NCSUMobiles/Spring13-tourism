@@ -1,6 +1,6 @@
 package com.vimd.p1t;
 
-import com.example.androidtablayout.R;
+import com.vimd.peoplefirsttourism.R;
 
 import android.app.TabActivity;
 import android.content.Intent;

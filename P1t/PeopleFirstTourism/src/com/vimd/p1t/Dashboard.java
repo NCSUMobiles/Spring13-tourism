@@ -8,12 +8,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.vimd.peoplefirsttourism.R;
+
+import android.app.Activity;
 import android.app.ExpandableListActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.SimpleCursorTreeAdapter;
 import android.widget.SimpleExpandableListAdapter;
 public class Dashboard extends ExpandableListActivity {
 	 private static final String NAME = "NAME";
@@ -22,7 +24,8 @@ public class Dashboard extends ExpandableListActivity {
 	    private ExpandableListAdapter mAdapter;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // setContentView(R.layout.videos_layout);
+        setContentView(R.layout.dashboard_layout);
+       // ExpandableListView view = (ExpandableListView) findViewById(R.id.l)
         List<Map<String, String>> groupData = new ArrayList<Map<String, String>>();
         List<List<Map<String, String>>> childData = new ArrayList<List<Map<String, String>>>();
        /* for (int i = 0; i < 3; i++) {
@@ -129,6 +132,7 @@ public class Dashboard extends ExpandableListActivity {
 		BufferedWriter bufferedWriter = new BufferedWriter(op);
 		bufferedWriter.write("");
 		bufferedWriter.close();
+		//super.onBackPressed();
     	finish();
     	}
     	catch(Exception e) {
