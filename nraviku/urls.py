@@ -1,3 +1,7 @@
+#########################################################
+# This file calls the correct function based on the url #
+#########################################################
+
 from django.conf.urls.defaults import patterns, include, url
 from django.conf import settings
 

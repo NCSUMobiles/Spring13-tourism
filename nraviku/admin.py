@@ -1,3 +1,8 @@
+############################################################################
+# This is the ADMIN page that allows easy access to the data in the models #
+# The ADMIN entry is created for every model present in the models.py      #
+############################################################################
+
 from django.contrib.gis import admin
 
 from peoplefirstapp.models import Tourist, PeopleFirstAdmin, Franchise, Network, EmpowermentAgent, Entrepreneur, Service, PhoneNumber, Offer, Mobile

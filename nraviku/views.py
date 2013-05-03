@@ -1,3 +1,8 @@
+###############################################################################
+## This is the file where the view for current urls is defined and 	      #
+## this file passes the required JSON file to the mobile to parse and display #
+###############################################################################
+
 from django.conf import settings
 from django.contrib import messages
 

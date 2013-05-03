@@ -1,3 +1,8 @@
+######################################################################################
+# Django is an ORM and support many databases whose models are specified here  	     #
+# The models are labelled and serve specific database requirements of the application#
+######################################################################################
+
 from django.contrib.gis.db import models
 from django.contrib.gis import geos
 from django.contrib import messages
@@ -92,6 +97,9 @@ class UserProfile(models.Model):
 
     post_save.connect(create_user_profile, sender=User)
 
+##########################
+###   User Profile     ###
+##########################
 
 class PeopleFirstUser(models.Model):
     """
@@ -135,8 +143,9 @@ class Tourist(PeopleFirstUser):
 
 
 
-
-
+#################################
+# Franchise- entrepreneur group #
+#################################
 
 class Franchise(models.Model):
     """
@@ -181,6 +190,9 @@ class Franchise(models.Model):
         return ('peoplefirstapp:franchise_detail_url', [self.pk])
 
 
+######################
+### Service Models     ###
+######################
 
 
 

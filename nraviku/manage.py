@@ -1,3 +1,7 @@
+##########################################################
+# This file simply executes the command passed to Django #
+# and is also a required file 			 	 #
+##########################################################
 #!/usr/bin/env python
 from django.core.management import execute_manager
 import imp
